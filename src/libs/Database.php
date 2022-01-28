@@ -32,8 +32,6 @@ class Database extends PDO{
         $pdo->exec($sql);
     }
 
-
-
     private function set_attributes()
     {
         $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

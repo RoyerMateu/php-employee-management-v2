@@ -27,12 +27,16 @@ define("MODELS", BASE_PATH . '/src/models');
 define("ENTITIES", MODELS . '/src/entities');
 
 //CSS
-define('CSS', BASE_URL . '/public/assets/css');
+define('CSS', BASE_URL . '/assets/css');
 
 //JS
-define('JS', BASE_URL . '/public/assets/js');
+define('JS', BASE_URL . '/assets/js');
 
 // QUERIES
 define("QUERIES", BASE_PATH . '/db');
+
+//HTML
+define('HTML', BASE_URL . '/assets/html');
+
 
 ?>
