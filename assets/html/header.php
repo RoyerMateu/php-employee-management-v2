@@ -1,13 +1,14 @@
+
 <nav class="navbar navbar-light bg-light">
-    <div class="navFlex">
+  <div class="navFlex">
     <a class="navbar-brand" href="dashboard.php">
-        <img src="<?php echo IMG; ?>/logo.png" width="70" height="30" class="d-inline-block align-top" alt="">
+      <img src="<?php echo IMG; ?>/logo.png" width="70" height="30" class="d-inline-block align-top" alt="">
     </a>
     <p class="navbar-brand">Employees management</p>
     <a class="nav-link" href="dashboard.php">Dashboard</a>
     <a class="nav-link" href="employee.php">Employees</a>
-    </div>
-    <a href="./library/loginController.php">
+  </div>
+  <a href="./library/loginController.php">
     <button class="btn btn-danger">Log Out</button>
-    </a>
+  </a>
 </nav>
