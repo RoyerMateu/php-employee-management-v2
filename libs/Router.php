@@ -12,7 +12,7 @@ class Router
         //We can GET the URL because we specified this in the htaccess
         //$url = isset($_GET['url']) ? explode('/', rtrim($_GET['url'], '/')) : null;
         // first line is like an IF and next the ? it's the true condition and next : it's the else condition
-        $url = isset($_GET['url']) ? $_GET['url'] : null;
+        $url = isset($_GET['url']) ? $_GET['url'] : "/main";
         $url = rtrim($url, '/');
         $url = explode('/', $url);
 
