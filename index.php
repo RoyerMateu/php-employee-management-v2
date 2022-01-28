@@ -13,4 +13,3 @@ include CONTROLLERS . '/SessionController.php';
 include CONTROLLERS . '/ErrorController.php';
 
 $router = new Router();
- echo "hello";
