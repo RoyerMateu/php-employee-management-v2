@@ -1,10 +1,13 @@
 <?php
 
 class View{
+    function __construct(){
+        if(EXECUTION_FLOW)
+        echo '<p>Base view class</p>';
+    }
 
-    function __construct()
-    {
-        //something goes here
+    function render($name){
+        require VIEWS . '/' . $name . '.php';
     }
 }
 

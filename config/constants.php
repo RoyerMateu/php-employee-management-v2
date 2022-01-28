@@ -16,4 +16,10 @@ define('JS', BASE_URL . '/assets/js');
 
 //HEADER & FOOTER
 define('HTML', BASE_PATH . '/assets/html');
+
+//IMG
+define('IMG', BASE_URL . 'assets/img');
+
+//ASSETS
+define('ASSETS', BASE_URL . 'assets');
 ?>
