@@ -73,7 +73,7 @@ function displayEmployeers(employeers) {
       deleteItem: function deleteEmployee(item) {
         return $.ajax({
           type: "DELETE",
-          url: `./library/employeeController.php?delete=${item.id}`,
+          url: ENDPOINT + `/deleteEmployee/` + item.id,
         }).done(async function (response) {
           console.log(response);
           let employeers = await getEmployeers();

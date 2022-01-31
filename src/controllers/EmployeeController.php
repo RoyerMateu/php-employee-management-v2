@@ -26,6 +26,11 @@ class EmployeeController extends Controller
         $createdEmployee = $this->model->addEmployee($employee);
         echo json_encode($createdEmployee);
     }
+
+    function deleteEmployee($id)
+    {
+        $this->model->deleteEmployee($id);
+    }
 }
 
 ?>

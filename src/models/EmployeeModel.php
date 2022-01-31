@@ -23,4 +23,12 @@ class EmployeeModel extends Model
             return $e;
         }
     }
+
+    function deleteEmployee($id){
+        try {
+            $this->query("DELETE FROM employees WHERE id = ?", [$id], false);
+        } catch (PDOException $e) {
+            return null;
+        }
+    }
 }
