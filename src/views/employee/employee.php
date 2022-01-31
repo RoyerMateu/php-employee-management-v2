@@ -51,7 +51,7 @@
                     <option value="undefined" <?php if ($this->employee['gender_id'] == '3') {
                                                     echo ' selected="selected"';
                                                 } ?>>Non Binary</option>
-                    <option value="other" <?php if ($this->employee['gender_id'] == '4') {
+                    <option selected value="other" <?php if ($this->employee['gender_id'] == '4') {
                                                     echo ' selected="selected"';
                                                 } ?>>Other</option>
                 </select>
