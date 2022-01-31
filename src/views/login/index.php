@@ -7,18 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo CSS;?>/login.css">
 </head>
-
 <body class="text-center">
     <main class="form-signin">
-        <form action="./src/library/loginManager.php" method="POST">
+        <form action="<?php echo BASE_URL ?>login/loginUser" method="POST">
             <h3 class="mb-3">PLEASE LOGIN</h3>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="login-name" name="login-name">
+                <input type="text" class="form-control" id="login-name" name="email">
                 <label for="login-name">Email address or username</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="login-pass" name="login-pass">
+                <input type="password" class="form-control" id="login-pass" name="password">
                 <label for="login-pass">Password</label>
             </div>
 
