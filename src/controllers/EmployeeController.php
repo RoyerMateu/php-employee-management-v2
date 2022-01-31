@@ -13,6 +13,11 @@ class EmployeeController extends Controller
     {
         $this->view->render("employee/dashboard");
     }
+
+    function getEmployees()
+    {
+        echo json_encode($this->model->getEmployees());
+    }
 }
 
 ?>

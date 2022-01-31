@@ -41,8 +41,5 @@ define('HTML', BASE_PATH . '/assets/html');
 // QUERIES
 define("QUERIES", BASE_PATH . '/db');
 
-//HTML
-define('HTML', BASE_URL . '/assets/html');
-
 
 ?>

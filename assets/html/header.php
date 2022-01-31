@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-light bg-light">
+<nav id="mainNav" data-base_url="<?= BASE_URL ?>" class="navbar navbar-light bg-light">
   <div class="navFlex">
     <a class="navbar-brand" href="dashboard.php">
       <img src="<?php echo IMG; ?>/logo.png" width="70" height="30" class="d-inline-block align-top" alt="">
