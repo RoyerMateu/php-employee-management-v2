@@ -22,6 +22,7 @@ class EmployeeController extends Controller
     function addEmployee()
     {
         $employee = json_decode(file_get_contents("php://input"), true);
+        //print_r($employee);
         $createdEmployee = $this->model->addEmployee($employee);
         echo json_encode($createdEmployee);
     }

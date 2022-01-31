@@ -30,7 +30,6 @@ function displayEmployeers(employeers) {
     data: employeers,
 
     fields: [
-      { name: "id", type: "hide", width: 0 },
       { name: "name", type: "text", title: "Name", validate: "required" },
       { name: "email", type: "text", title: "Email", validate: "required" },
       { name: "age", type: "number", title: "Age", validate: "required" },
@@ -63,7 +62,7 @@ function displayEmployeers(employeers) {
         return $.ajax({
           type: "POST",
           url: ENDPOINT + `/addEmployee`,
-          data: item,
+          data: JSON.stringify(item),
         }).done(async function (response) {
           let employeers = await getEmployeers();
           displayEmployeers(employeers);

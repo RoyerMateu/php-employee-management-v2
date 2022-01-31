@@ -20,7 +20,7 @@ class EmployeeModel extends Model
             $this->query($query, $employee, false);
             return $this->query("SELECT * FROM employees WHERE phoneNumber = ?", [$employee['phoneNumber']])[0];
         } catch (PDOException $e) {
-            return null;
+            return $e;
         }
     }
 }
