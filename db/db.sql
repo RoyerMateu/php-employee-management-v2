@@ -38,6 +38,14 @@ VALUES
 ("Non Binary"),
 ("Other");
 
+CREATE TABLE users (
+id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(20) UNIQUE NOT NULL,
+password VARCHAR(255) NOT NULL,
+email VARCHAR(100) UNIQUE NOT NULL
+);
+
+
 INSERT INTO employees(name, lastName, email, gender_id, city, streetAddress, state, age, postalCode, phoneNumber)
 VALUES
 ('Gannie', 'Matthews', 'gmatthews0@deliciousdays.com', 1, 'Xujia', '30070 Logan Trail', 'PD', 39, 45624, '733-588-7358'),
@@ -60,3 +68,6 @@ VALUES
 ('Othilia', 'Montacute', 'omontacuteh@gnu.org', 1, 'Seto', '860 Dapin Court', 'SD', 71, 21323, '198-173-2821'),
 ('Ansel', 'Blankley', 'ablankleyi@topsy.com', 3, 'Petawawa', '3 Rutledge Crossing', 'HY', 3, 63634, '617-300-0873'),
 ('Ulises', 'Tripett', 'utripettj@ehow.com', 2, 'Paraiso', '5 Nancy Drive', 'HG', 47, 64323, '938-209-6216');
+
+INSERT INTO users (name, email, password)
+VALUES ("admin", "admin@assemblerschool.com", "$2y$10$8Jq.8i9/FUIJOUCmA8AUx.Rxrhwcq3YbwfEBmP8Tg9YtsTTn.kHAK");
