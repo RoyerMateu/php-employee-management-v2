@@ -32,7 +32,7 @@
         <div id="dashboard"></div>
     </main>
 
-    <?php //require_once "../assets/html/footer.html"; ?>
+    <?php require_once HTML."/footer.php"; ?>
 </body>
 
 </html>

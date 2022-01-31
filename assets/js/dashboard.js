@@ -104,7 +104,7 @@ function displayEmployeers(employeers) {
     //Click over the row employee selection
     rowClick: function editEmployee(args) {
       let id = args["item"].id;
-      location.assign(`./employee.php?editEmployee=${id}`);
+      location.assign(`./show/${id}`);
     },
   });
 }

@@ -23,4 +23,13 @@ class EmployeeModel extends Model
             return null;
         }
     }
+    function getEmployee(string $id)
+    {
+        try {
+            return $this->query("SELECT * FROM employees WHERE id = ?", [$id])[0];
+        } catch (PDOException $e) {
+            return null;
+        }
+    }
+
 }

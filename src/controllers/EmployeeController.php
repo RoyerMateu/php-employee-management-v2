@@ -25,6 +25,13 @@ class EmployeeController extends Controller
         $createdEmployee = $this->model->addEmployee($employee);
         echo json_encode($createdEmployee);
     }
+
+    function show($id)
+    {
+        $this->view->employee = $this->model->getEmployee($id);
+        $this->view->render("employee/employee");
+    }
 }
+
 
 ?>
