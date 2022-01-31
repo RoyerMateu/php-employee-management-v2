@@ -9,6 +9,8 @@
     <a class="nav-link" href="employee.php">Employees</a>
   </div>
   <a href="./library/loginController.php">
-    <button class="btn btn-danger">Log Out</button>
+    <form action="<?= BASE_URL ?>login/logoutUser" method="post" class="form-inline ml-auto">
+      <button class="btn btn-danger" type="submit">Log Out</button>
+    </form>
   </a>
 </nav>
