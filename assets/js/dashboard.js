@@ -62,7 +62,7 @@ function displayEmployeers(employeers) {
       insertItem: function addEmployee(item) {
         return $.ajax({
           type: "POST",
-          url: "./library/employeeController.php?addEmployee",
+          url: ENDPOINT + `/addEmployee`,
           data: item,
         }).done(async function (response) {
           let employeers = await getEmployeers();
