@@ -27,17 +27,15 @@ class EmployeeController extends Controller
         echo json_encode($createdEmployee);
     }
 
-<<<<<<< HEAD
-    function show($id)
-    {
-        $this->view->employee = $this->model->getEmployee($id);
-        $this->view->render("employee/employee");
-    }
-=======
-    function deleteEmployee($id)
-    {
-        $this->model->deleteEmployee($id);
->>>>>>> 7f9e3f10b0be65dafc29c41eb3e96cdf51fff0cf
-    }
+function show($id)
+{
+    $this->view->employee = $this->model->getEmployee($id);
+    $this->view->render("employee/employee");
+}
 
+function deleteEmployee($id)
+{
+    $this->model->deleteEmployee($id);
+}
+}
 ?>
