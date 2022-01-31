@@ -30,7 +30,6 @@ function displayEmployeers(employeers) {
     data: employeers,
 
     fields: [
-      { name: "id", type: "hide", width: 0 },
       { name: "name", type: "text", title: "Name", validate: "required" },
       { name: "email", type: "text", title: "Email", validate: "required" },
       { name: "age", type: "number", title: "Age", validate: "required" },
@@ -63,7 +62,7 @@ function displayEmployeers(employeers) {
         return $.ajax({
           type: "POST",
           url: ENDPOINT + `/addEmployee`,
-          data: item,
+          data: JSON.stringify(item),
         }).done(async function (response) {
           let employeers = await getEmployeers();
           displayEmployeers(employeers);
@@ -74,7 +73,7 @@ function displayEmployeers(employeers) {
       deleteItem: function deleteEmployee(item) {
         return $.ajax({
           type: "DELETE",
-          url: `./library/employeeController.php?delete=${item.id}`,
+          url: ENDPOINT + `/deleteEmployee/` + item.id,
         }).done(async function (response) {
           console.log(response);
           let employeers = await getEmployeers();

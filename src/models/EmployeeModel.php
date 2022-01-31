@@ -20,6 +20,14 @@ class EmployeeModel extends Model
             $this->query($query, $employee, false);
             return $this->query("SELECT * FROM employees WHERE phoneNumber = ?", [$employee['phoneNumber']])[0];
         } catch (PDOException $e) {
+            return $e;
+        }
+    }
+
+    function deleteEmployee($id){
+        try {
+            $this->query("DELETE FROM employees WHERE id = ?", [$id], false);
+        } catch (PDOException $e) {
             return null;
         }
     }

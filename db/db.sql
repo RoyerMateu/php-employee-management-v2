@@ -19,9 +19,9 @@ name VARCHAR(15) NOT NULL
 CREATE TABLE employees(
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 name VARCHAR(25) NOT NULL,
-lastName VARCHAR(25) NOT NULL,
+lastName VARCHAR(25),
 email VARCHAR(50) NOT NULL,
-gender_id INT NOT NULL,
+gender_id INT,
 city VARCHAR(20),
 streetAddress VARCHAR(30),
 state VARCHAR(20),
