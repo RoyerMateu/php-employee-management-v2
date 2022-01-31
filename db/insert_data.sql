@@ -20,3 +20,6 @@ VALUES
 ('Othilia', 'Montacute', 'omontacuteh@gnu.org', 1, 'Seto', '860 Dapin Court', 'SD', 71, 21323, '198-173-2821'),
 ('Ansel', 'Blankley', 'ablankleyi@topsy.com', 3, 'Petawawa', '3 Rutledge Crossing', 'HY', 3, 63634, '617-300-0873'),
 ('Ulises', 'Tripett', 'utripettj@ehow.com', 2, 'Paraiso', '5 Nancy Drive', 'HG', 47, 64323, '938-209-6216');
+
+INSERT INTO users (name, email, password)
+VALUES ("admin", "admin@assemblerschool.com", "$2y$10$8Jq.8i9/FUIJOUCmA8AUx.Rxrhwcq3YbwfEBmP8Tg9YtsTTn.kHAK");
