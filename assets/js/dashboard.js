@@ -87,8 +87,8 @@ function displayEmployeers(employeers) {
       updateItem: function updateEmployee(item) {
         return $.ajax({
           type: "POST",
-          url: "./library/employeeController.php?modifyEmployee",
-          data: { data: item, _method: "PUT" },
+          url: ENDPOINT + `/updateEmployee`,
+          data: JSON.stringify(item),
         }).done(async function (response) {
           console.log(response);
           let employeers = await getEmployeers();
