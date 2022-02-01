@@ -6,7 +6,6 @@
     </a>
     <p class="navbar-brand">Employees management</p>
     <a class="nav-link" href="<?php echo BASE_URL;?>employee/dashboard">Dashboard</a>
-    <a class="nav-link" href="<?php echo BASE_URL;?>">Employees</a>
   </div>
 
     <form action="<?= BASE_URL ?>login/logoutUser" method="post" class="form-inline ml-auto">

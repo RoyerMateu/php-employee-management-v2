@@ -26,9 +26,7 @@ class Database extends PDO{
     private function initDb()
     {
         $pdo = new PDO('mysql:host' . HOST, USERNAME, PASSWORD);
-        $sql = file_get_contents(QUERIES . '/create_db.sql');
-        $pdo->exec($sql);
-        $sql = file_get_contents(QUERIES . '/insert_data.sql');
+        $sql = file_get_contents(QUERIES . '/db.sql');
         $pdo->exec($sql);
     }
 
