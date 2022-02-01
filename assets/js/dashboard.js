@@ -35,7 +35,7 @@ function displayEmployeers(employeers) {
       { name: "age", type: "number", title: "Age", validate: "required" },
       {
         name: "streetAddress",
-        type: "number",
+        type: "text",
         title: "Street No.",
         validate: "required",
       },
